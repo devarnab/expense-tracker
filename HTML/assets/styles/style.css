@@ -74,7 +74,7 @@ header {
 
 @media only screen and (min-width: 1050px) {
   .img-bg {
-    background: #fafafa url(./images/header-bg.svg) no-repeat right;
+    background: #fafafa url("../images/header-bg.svg") no-repeat right;
     width: 50vw;
     height: 80vh;
     background-size: contain;
