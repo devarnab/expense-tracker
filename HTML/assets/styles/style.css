@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+body {
+  background: #fafafa;
+  color: #2f2e41;
+  font-size: 16px;
+  line-height: 1.3;
+  position: relative;
+  height: 100vh;
+}
+.img-bg {
+  position: absolute;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #fca311;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.logo {
+  color: white;
+  font-size: 36px;
+  letter-spacing: -8px;
+  line-height: 60px;
+  text-shadow: 3px 3px rgb(239, 71, 111), 5px 5px #457b9d;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.title h1 {
+  color: #2f2e41;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 65px;
+  margin-left: 24px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.pad-top {
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 380px) {
+  .logo {
+    font-size: 54px;
+    margin: 0 auto;
+  }
+  .title h1 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .title h1 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .img-bg {
+    background: #fafafa url("../images/header-bg.svg") no-repeat right;
+    width: 50vw;
+    height: 80vh;
+    background-size: contain;
+    right: 20px;
+    top: 100px;
+  }
+}
+.welcome {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 48px;
+  padding-bottom: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.form-container {
+  border-top: 1px solid #c2c2c2;
+  max-width: 400px;
+  padding-top: 16px;
+}
+@media only screen and (min-width: 1300px) {
+  .form-container {
+    max-width: 500px;
+  }
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  margin-right: auto;
+  line-height: 40px;
+}
+.form-group input,
+.form-group select {
+  height: 40px;
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #c2c2c2;
+}
+.text-red {
+  color: #e63946;
+}
+button {
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  padding: 0 32px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button + button {
+  margin-left: 16px;
+}
+.button-container {
+  margin-top: 16px;
+  border-top: 1px solid #c2c2c2;
+  padding: 16px 0;
+}
+.primary {
+  background-color: #ef476f;
+  color: white;
+}
+.primary:hover {
+  background-color: #ff6584;
+  color: white;
+}
+.primary:disabled {
+  background-color: #d2d2d3;
+  color: #a09f9f;
+}
+.secondary {
+  background-color: #e5e5e5;
+  color: #2f2e41;
+}
+.secondary:hover {
+  background-color: #cecccc;
+  color: #2f2e41;
+}
